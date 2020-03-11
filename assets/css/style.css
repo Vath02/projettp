@@ -1,0 +1,331 @@
+@media only screen and (max-width: 600px) {
+    img {
+        width:100%;
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }  
+    body {
+        width:100%;
+        background-color: #FFFFFF;
+        /* background-image: url("../img/sublight.jpg"); */
+        /* background-image: avec #couleur noire ou grise sur Gimp */
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #carousel{
+        width: 85%;
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+}
+small {
+    color: #faf43b;
+}
+h2, h3, h4 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    color: #eb6854;
+}
+.dropdown-toggle {
+    background-color: #5ef954;
+}
+.dropdown-menu {
+    background-color: #5ef954;
+}
+.vatmintonLogo{
+    width: 5%;
+    height: 20%;
+}
+.cart {
+    width: 20%;
+    height: 20%;
+}
+ .picture {
+        width: 40%;
+        height: 40%;
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .picture:hover {
+        width: 60%;
+        height: 60%;
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(1.2);
+    transition: 0.5s;
+    }
+    .card-body {
+        font-size: 14px;
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+    }
+    .card-body:hover {
+        font-size: 24px;
+    }
+    
+nav{
+    /*    background-image: url("../img/wallpaperFusionStar.jpg");*/
+    background-color: #27272a;
+    width: 100%;
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+    background-color: #FFFFFF;
+    text-align: center;
+    text-justify: auto;
+    text-height: auto;
+}
+#navbarNav {
+    background-color: #FFFFFF;
+}
+
+.news {
+    background-color: #952007;
+    color: #FFFFFF;
+    font-size: 43px;
+
+}
+
+.adminImg {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wei {
+    width: 65%;
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lee {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.anseYoung{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.malaysia{
+    text-indent: 15mm; /* permet de déplacer de 1.5 cm à partir de la marge de gauche */
+    text-align: justify;
+}
+.southYoung{
+    color: black;
+    text-align: justify;
+}
+
+.article2 {
+    background-color: #FFFFFF;
+    color: black;
+}
+.young{
+    text-indent: 15mm; /* il est également possible de le mettre en px au lieu des mm */
+    text-align: justify;
+}
+.young2{
+    color: black;
+    text-indent: 15mm; /* il est également possible de le mettre en px au lieu des mm */
+    text-align: justify;
+}
+.young3{
+    text-indent: 15mm; /* il est également possible de le mettre en px au lieu des mm */
+    text-align: justify;
+}
+.shop {
+    background-color: #FFFFFF;
+    font-size: 43px;
+    color: #952007;
+}
+
+.promo {
+    background-color: #FFFFFF;
+}
+.emptyCart {
+    font-size: 19px;
+}
+
+.mainTitle {
+    color: black;
+    font-size: 45px;
+}
+.pageBottom {
+    color: #fc0101;
+}
+.title {
+    font-size: 30px;
+}
+.soissons{
+    color: #3480b3;
+}
+.nav {
+    background-color: white;
+    color: black;
+    list-style: none;
+}
+
+.img1{
+    margin-left: 70px;
+}
+
+.newYear{
+    background-image: url("assets/img/flocons.jpg");
+    font-size: 40px;
+}
+#newYear {
+    background-image: url("assets/img/flocons.jpg");
+}
+.banTime {
+    background-color: #e0e4ff;
+}
+#navBg{
+    vertical-align: middle;
+}
+.navVertical {
+    margin-left: 40px;
+    background-color: #f7ba2e;
+    vertical-align: middle;
+}
+.nav-link{
+    font-size: 24px;
+}
+.nav-item{
+    background-color: #FFFFFF; /*bg entre les boutons*/
+    color: black;
+    list-style: none;
+    vertical-align: middle;
+}
+.contact {
+    list-style: none;
+}
+.address {
+    text-align: center;
+    font-size: 24px;
+    list-style: none;
+}
+.messageUsers {
+    text-align: center;
+    font-size: 24px;
+    color: green;
+}
+.dateTime {
+    font-size: 24px;
+}
+.search {
+    font-size: 18px;
+}
+
+.profilUser {
+    font-size: 27px;
+}
+
+#detailsProduct {
+    background-color: #FFFFFF;
+}
+
+.detailsProduct {
+    font-size: 17px;
+}
+
+.card {
+    background-color: #ecf5ef;
+}
+.card-body {
+    background-color: #f5f9f6;
+}
+.card-title {
+    background-color: #ecf5ef;
+}
+.card-img-top {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+
+
+.firstnameUpp {
+    text-transform: uppercase;
+}
+.footerCard {
+    background-color: #FFFFFF;
+}
+.modify {
+    font-size: 30px;
+    background-color: #4d83a9;
+    color: black;
+}
+.modify2 {
+    font-size: 30px;
+    background-color: #0ae642;
+    color: black;
+}
+.delete {
+    font-size: 30px;
+    background-color: red;
+    color: black;
+}
+.cancel {
+    text-align: center;
+}
+#mainForm {
+    background-color: #bdc4bd;
+}
+
+.contentP {
+    font-size: 20px;
+}
+.content {
+    font-size: 19px;
+}
+.button{
+    font-size: 22px;
+}
+.copyright {
+    text-align:center;
+    font-size: 24px;
+}
+
+.formA{
+    border: 3px solid #313333;
+    background-color: #bdc4bd;
+    color: white;
+}
+.form-control{
+    border-radius: 20px;
+    background-color: #353535;
+    border: none;
+}
+.imgP{
+    max-height: 300px;
+    max-width: 300px;
+}
+.screenProfile {
+    background-color: #6b9cd6;
+}
+.footerInfo {
+    background-color: white;
+}
+
+
+
