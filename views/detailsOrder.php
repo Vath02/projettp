@@ -25,24 +25,6 @@ require_once 'header.php';
                     <li class="list-group-item"><p>Status : </p><?= $detailsOrder->status ?></li>
                 </ul>
 
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="row">
-                                <div class="col-md-8 border-right border-primary pr-4">
-                                    <h5 class="text-primary">Confirmation :</h5>
-                                    <p class="mt-3 mb-4">Confirmez-vous votre commande</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="../views/createOrderAndOrder_items.php">
-                        <input type="button" class="btn bg-success py-2 px-5" value="oui" /></a>
-                    <a href="../views/listProduct.php">
-                        <input type="button" class="btn bg-danger py-2 px-5" value="non" /></a>
-                </div>
 
             </div>
         </form>

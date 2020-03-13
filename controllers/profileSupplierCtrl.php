@@ -8,7 +8,13 @@ $regexSiret = '/^[0-9]{9||14}$/';
 $regexMail = '/^[^\W][a-zA-Z0-9]+(.[a-zA-Z0-9]+)@[a-zA-Z0-9]+(.[a-zA-Z0-9]+).[a-zA-Z]{2,4}$/';
 $regexPassword = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).{6,}$/';
 
+
+
 if (isset($_POST['submit'])) {
+    
+    $supplier = new Supplier();
+$supplier->id = isset($_GET['id']) ? $_GET['id'] : '';
+$supplierList = $supplier->getSupplierList();
     
     // Création d'une instance de classe User. Instance de classe = OBJET
     $profileOneSupplier = new Supplier();

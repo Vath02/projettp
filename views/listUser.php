@@ -36,8 +36,8 @@ require_once 'header.php';
         <?php if (isset($message)) { ?>
             <p class="messagePatients"><?= $message ?></p>
         <?php } ?>
-
-        <table class="table">
+            <div class="table-responsive">
+                <table class="table">
             <thead>
                 <tr class="text-center text-white bg-success">
                     <th scope="col">#id</th>
@@ -93,6 +93,7 @@ require_once 'header.php';
                     ?>
             </tbody>
         </table>
+            </div>
     </div>
 </div>
 <div class="row">

@@ -9,33 +9,30 @@ require_once '../controllers/listProductCtrl.php';
 //require_once '../controllers/listProductSearchCtrl.php';
 require_once 'header.php';
 ?>
-
 <div id="detailsProduct" class="h1 text-center mt-4">LISTE DES PRODUITS
 </div>
 <div class="row d-flex justify-content-center mt-5">
-    
-        <input type="hidden" name="id" value="<?= isset($_GET['id']) ? $_GET['id'] : '' ?>" />
-        <?php foreach ($productList as $product) { ?>
 
-            <div class="col-md-4 d-flex justify-content-center mt-3">
-                <div class="card text-black text-center bg-secondary mb-3" style="max-width: 20rem;">
-                                       <div class="card-header"><?= $product->id ?><?= $product->productName ?></div>
-                    <div class="card-body">
-                        <div><img src="../assets/img/<?= $product->picture ?>" class="picture" alt="vatminton" /></div>
-                        <h4 class="card-title">référence : <?= $product->reference ?></h4>
-                        <p class="card">Catégorie de produit : <?= $product->categoryName ?></p>
-                        <p class="card">Prix : <?= $product->price ?> €</p>
-                        <a class="px-3" href="detailsProduct.php?id=<?= $product->id ?>">Détails</a>
-                        <?php if (isUser() || isAdmin()) { ?>
-                            <a class="px-3" href="addToCart.php?id=<?= $product->id ?>">Ajouter à mon panier</a>
-                        <?php } ?>
-                    </div>
+    <input type="hidden" name="id" value="<?= isset($_GET['id']) ? $_GET['id'] : '' ?>" />
+    <?php foreach ($productList as $product) { ?>
+
+        <div class="col-md-4 d-flex justify-content-center mt-3">
+            <div class="card text-black text-center bg-secondary mb-3" style="max-width: 20rem;">
+                <div class="card-header"><?= $product->id ?><?= $product->productName ?></div>
+                <div class="card-body">
+                    <div><img src="../assets/img/<?= $product->picture ?>" class="picture" alt="vatminton" /></div>
+                    <h4 class="card-title">référence : <?= $product->reference ?></h4>
+                    <p class="card">Catégorie de produit : <?= $product->categoryName ?></p>
+                    <p class="card">Prix : <?= $product->price ?> €</p>
+                    <a class="px-3" href="detailsProduct.php?id=<?= $product->id ?>">Détails</a>
+                    <?php if (isUser() || isAdmin()) { ?>
+                        <a class="px-3" href="addToCart.php?id=<?= $product->id ?>">Ajouter à mon panier</a>
+                    <?php } ?>
                 </div>
             </div>
-        <?php }
-        ?>
-
-  
+        </div>
+    <?php }
+    ?>
 </div>
 
 

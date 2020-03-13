@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
     } elseif (!preg_match($regexNameProduct, $product->name)) {
         $product->formErrors['name'] = 'Merci de rentrer un nom de produit valide';
     } elseif (strlen($product->name) < 1 || strlen($product->name) > 26) {
-        $product->formErrors['name'] = 'Le nom doit comporter entre 2 et 25 caratères';
+        $product->formErrors['name'] = 'Le nom doit comporter entre 2 et 25 caractères';
     }
 
     // Validation des catégories (select)

@@ -47,10 +47,8 @@ if (!empty($_SESSION['cart'])) {
         // Commit de la transaction qui applique de façon permanente les changements
         $order->commit();
 
-        unset($_SESSION['cart']);
-
         // Redirection vers la page affichant la liste des produits
-        header('Location: delivery.php');
+        header('Location: delivery.php?id=' . $lastOrderId);
         exit();
     } catch (Exception $ex) {
         // Rolls back de la transaction qui annule les changements opérés

@@ -19,10 +19,10 @@ include 'header.php';
                 <p class="dateTime"> </p><?= strftime('%H:%M') ?>
             </h6>
             <div class="card-body">
-                <div class="profilUser card-title text-center"><?= $profileOneSupplier->siret ?><p class="firstnameUpp"> <?= $profileOneSupplier->society ?></p></div>
+                <div class="profilUser card-title text-center"><?= $supplierList->siret ?><p class="firstnameUpp"> <?= $supplierList->society ?></p></div>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><p>Site Web : </p><?= $profileOneSupplier->website ?></li>
+                <li class="list-group-item"><p>Site Web : </p><?= $supplierList->website ?></li>
                 <li class="list-group-item"><img src="../assets/img/mail.jpg" class="profilUser card-img-top w-25" alt="mail" /><p> </p><?= $profileOneSupplier->mail ?></li>
 
             </ul>

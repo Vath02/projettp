@@ -50,10 +50,10 @@
                                 <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="../views/listOrder.php?id=<?= $product->id ?>">Liste de toutes mes commandes</a>
-                                <a class="dropdown-item" href="../views/profileUser.php">Détails de mon compte</a>
-                                <a class="dropdown-item" href="../views/updateUser.php">Modifié mon utilisateur</a>
-                                <a class="dropdown-item" href="../views/deleteUser.php">Supprimer mon utilisateur</a>
+                                <a class="dropdown-item" href="../views/listOrder.php?id=<?= $_SESSION['user_id'] ?>">Liste de toutes mes commandes</a>
+                                <a class="dropdown-item" href="../views/profileUser.php?id=<?= $_SESSION['user_id'] ?>">Détails de mon compte</a>
+                                <a class="dropdown-item" href="../views/updateUser.php?id=<?= $_SESSION['user_id'] ?>">Modifier mon utilisateur</a>
+                                <a class="dropdown-item" href="../views/deleteUser.php?id=<?= $_SESSION['user_id'] ?>">Supprimer mon utilisateur</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../views/userLogout.php">Me déconnecter</a>
                             </div>
@@ -71,9 +71,9 @@
                                 <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="../views/profileSupplier.php">Détails de mon entreprise</a>
-                                <a class="dropdown-item" href="../views/updateSupplier.php">Modifier mes coordonnées</a>
-                                <a class="dropdown-item" href="../views/deleteSupplier.php">Supprimer mon espace professionnel</a>
+                                <a class="dropdown-item" href="../views/profileSupplier.php?id=<?= $_SESSION['user_id'] ?>">Détails de mon entreprise</a>
+                                <a class="dropdown-item" href="../views/updateSupplier.php?id=<?= $_SESSION['user_id'] ?>">Modifier mes coordonnées</a>
+                                <a class="dropdown-item" href="../views/deleteSupplier.php?id=<?= $_SESSION['user_id'] ?>">Supprimer mon espace professionnel</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../views/supplierLogout.php">Me déconnecter</a>
                             </div>

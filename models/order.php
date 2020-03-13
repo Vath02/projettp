@@ -95,6 +95,25 @@ class Order extends Database {
         return $results->fetch(PDO::FETCH_OBJ);
         // fetch ne renvoit qu'un OBJET contrairement à fetchAll()qui renvoit un tableau d'OBJETS
     }
+    
+    public function getOrderByUser() {
+        //Définition de la requête SQL
+        $sql = 'SELECT `id`, `number`, `status` FROM `c19v12_orders` WHERE `id_c19v12_users` = :id';
+        // Préparation de la requête
+        $results = $this->pdo->db->prepare($sql);
+        // Associe une valeur au marqueur nominatif :id
+        $results->bindValue(':id', $this->id_c19v12_users, PDO::PARAM_INT); //marqueur nominatif = bindValue
+        //Soumission de la requête au serveur de la base de données
+        try {
+            $results->execute();
+        } catch (Exception $e) {
+            die('échec de la connexion :' . $e->getMessage());
+        }
+
+        //récupération de la liste d'un patient sous forme d'un tableau d'objets
+        return $results->fetchAll(PDO::FETCH_OBJ);
+        // fetch ne renvoit qu'un OBJET contrairement à fetchAll()qui renvoit un tableau d'OBJETS
+    }
 
     public function getMaxNumber() {
         //Définition de la requête SQL
